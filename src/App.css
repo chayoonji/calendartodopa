@@ -17,7 +17,11 @@ body {
   background: #f8fafc;
 }
 
+h5 {
+  text-align: center;
+}
 .card {
+  margin-bottom: 1rem;
   padding: 1rem;
 }
 
@@ -161,4 +165,8 @@ header {
 
 .notes-wrapper .note {
   max-height: 100px;
+}
+
+h2 {
+  text-align: center;
 }

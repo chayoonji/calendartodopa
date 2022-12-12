@@ -29,35 +29,35 @@ function UpdateNote() {
 
   return (
     <Card className={"update-note-wrapper"}>
-      <h3>{`Update Note (${note.date})`}</h3>
+      <h3>{`수정 (${note.date})`}</h3>
       <Form>
         <Form.Group controlId="formUpdateTitle">
-          <Form.Label>Title</Form.Label>
+          <Form.Label>제목</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Title"
+            placeholder="제목"
             defaultValue={note && note.title}
           />
         </Form.Group>
         <Form.Group controlId="formUpdateDescription">
-          <Form.Label>Description</Form.Label>
+          <Form.Label>내용</Form.Label>
           <Form.Control
             as="textarea"
             rows={3}
-            placeholder="Description"
+            placeholder="내용"
             defaultValue={note && note.description.substring(0, 100)}
           />
         </Form.Group>
       </Form>
       <p>
         <Button variant="primary" onClick={onUpdateClick}>
-          Update
+          수정
         </Button>{" "}
         <Button
           variant="secondary"
           onClick={() => dispatch(showUpdateNote(false))}
         >
-          Discard
+          비우기
         </Button>
       </p>
     </Card>
