@@ -35,23 +35,23 @@ function AddNote() {
 
   return (
     <Card className={"add-note-wrapper"}>
-      <h3>{`Add Note (${date})`}</h3>
+      <h3>{`일정 추가 (${date})`}</h3>
       <Form>
         <Form.Group controlId="formAddTitle">
-          <Form.Label>Title</Form.Label>
-          <Form.Control type="text" placeholder="Title" />
+          <Form.Label>제목</Form.Label>
+          <Form.Control type="text" placeholder="..." />
         </Form.Group>
         <Form.Group controlId="formAddDescription">
-          <Form.Label>Description</Form.Label>
-          <Form.Control as="textarea" rows={3} placeholder="Description" />
+          <Form.Label>내용</Form.Label>
+          <Form.Control as="textarea" rows={3} placeholder="..." />
         </Form.Group>
       </Form>
       <p>
         <Button variant="primary" onClick={onAddClick}>
-          Add
+          추가
         </Button>{" "}
         <Button variant="secondary" onClick={onAddDiscardClick}>
-          Discard
+          비우기
         </Button>
       </p>
     </Card>

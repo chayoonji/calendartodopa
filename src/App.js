@@ -20,7 +20,16 @@ function App() {
         <header>
           <h1>MENU</h1>
           <nav>
-            <span>Menu1</span>
+            <span
+              onClick={() =>
+                window.open(
+                  "https://github.com/chayoonji/calendartodopa",
+                  "_blank"
+                )
+              }
+            >
+              Menu1
+            </span>
             <span>Menu2</span>
             <span>Menu3</span>
             <span className="aApp">

@@ -92,7 +92,7 @@ function Notes() {
     <Card className="notes-wrapper">
       <Row>
         <Col>
-          <h3>Notes</h3>
+          <h3>메모장</h3>
         </Col>
         <Col style={{ textAlign: "right" }}>
           <ButtonGroup size="sm">
@@ -101,21 +101,21 @@ function Notes() {
               onClick={showPastNotes}
               active={showNotes.active === 0}
             >
-              Past
+              지난 일정
             </Button>
             <Button
               variant="success"
               onClick={showCurrentNotes}
               active={showNotes.active === 1}
             >
-              Current
+              현재 일정
             </Button>
             <Button
               variant="success"
               onClick={showFutureNotes}
               active={showNotes.active === 2}
             >
-              Future
+              이후 일정
             </Button>
           </ButtonGroup>
         </Col>
@@ -126,8 +126,8 @@ function Notes() {
         ))
       ) : (
         <div style={{ textAlign: "center" }}>
-          <h4>No Notes</h4>
-          <h5>Create your first Note</h5>
+          <h4>일정이 없습니다.</h4>
+          <h5>우측 페이지를 통해 등록해주세요</h5>
         </div>
       )}
     </Card>
