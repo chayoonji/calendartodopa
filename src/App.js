@@ -22,16 +22,25 @@ function App() {
           <nav>
             <span
               onClick={() =>
-                window.open(
-                  "https://github.com/chayoonji/calendartodopa",
-                  "_blank"
-                )
+                window.open("https://github.com/chayoonji/oodo.git", "_blank")
               }
             >
               차윤지
             </span>
-            <span>강채린</span>
-            <span>김솔</span>
+            <span
+              onClick={() =>
+                window.open("https://github.com/QWOFTQ/PortFolio", "_blank")
+              }
+            >
+              강채린
+            </span>
+            <span
+              onClick={() =>
+                window.open("https://github.com/sol-web/siteweb", "_blank")
+              }
+            >
+              김솔
+            </span>
             <span className="aApp">
               <GoogleLogin
                 success={(res) => console.log(res)}
